@@ -11,7 +11,7 @@ print(calc(range(3)))
 # print(calc()), fail
 
 # 利用可变参数，调用函数的方式可以简化成这样
-# *nums表示把nums这个list的所有元素作为可变参数传进去
+# *nums表示把nums这个list的所有元素作为可变参数传进去.*args接收的是一个tuple
 def calcc(*numbers):
     sum = 0
     for n in numbers:

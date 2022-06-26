@@ -1,5 +1,5 @@
 # 关键字参数kw
-# 扩展函数的功能; 调用者愿意提供更多的参数，我们也能收到
+# 扩展函数的功能; 调用者愿意提供更多的参数，我们也能收到。**kw接收的是一个dict
 def person(name, age, **kw):
     print('name:', name, 'age:', age, 'other:', kw)
     
@@ -18,6 +18,9 @@ def personn(name, age, *, city, job):
     
 print(personn('Jack', 24,job='B',city='A'))
 
+#如果函数定义中已经有了一个可变参数，后面跟着的命名关键字参数就不再需要一个特殊分隔符*了：
+def person(name, age, *args, city, job):
+    print(name, age, args, city, job)
 
 
 
