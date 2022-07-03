@@ -75,5 +75,5 @@ def tri(max):
         n = n+1
     return 'done'
 
-for n in tri(10):
+for n in tri(11):
     print(n)
